@@ -22,7 +22,7 @@ public:
           vector<int> path; 
           
 
-          dfs(root, path, targerSum); 
+          dfs(root, path, targetSum); 
 
           return res; 
 
