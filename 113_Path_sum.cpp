@@ -32,7 +32,7 @@ public:
           if(root==nullptr) return; 
           path.push_back(root->val); 
           targetSum -=root->val; 
-          if(root->left==nullptr && root->right) {
+          if(root->left==nullptr && root->right==nullptr) {
                if(targetSum==0) res.push_back(path); 
           }else {
               dfs(root->left, path, targetSum); 
